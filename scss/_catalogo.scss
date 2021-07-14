@@ -48,6 +48,8 @@
 
         &__celda {
             @extend .catalogo__tabla__header;
+            background-color: aliceblue;
+            color: $colorTerciario;
             font-size: 1rem;
             padding: 0;
             

@@ -114,6 +114,8 @@
       padding: 1rem;
       border: 1px solid #170e4e; }
     .catalogo__tabla__celda {
+      background-color: aliceblue;
+      color: #170e4e;
       font-size: 1rem;
       padding: 0; }
 
