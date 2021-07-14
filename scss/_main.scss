@@ -39,14 +39,16 @@
             font-size: 1.5rem;
             font-family: $letraSecundaria;
             font-weight: bold;
+            margin-bottom: 4px;
         }
 
         & input {
-        height: 1.5rem;
+        height: 2rem;
         position: relative;
         bottom: 3px;
         width: 230px;
         margin-left: 5px;
+        margin-top: 3px;
         }
     }
 
