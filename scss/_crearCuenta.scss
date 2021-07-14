@@ -1,0 +1,9 @@
+.crearCuenta{
+
+    @extend .contacto;
+     
+    &__titulo{
+        @include titulos();
+
+    }
+}

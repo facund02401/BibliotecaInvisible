@@ -1,0 +1,104 @@
+.formarParte {
+
+    &__titulo{
+        @include titulos();
+
+    }
+
+    &__texto{
+        @include fuenteParrafo(1rem);
+
+        &__link{
+            text-decoration: none;
+            color: $colorTerciario;
+            font-weight: bold;
+
+            &:hover{
+                color: $colorPrimario;
+            }
+        }
+    }
+
+    &__tarjeta{
+        background-color: $colorTerciario;
+        height: 420px;
+        margin: 2rem;
+        border-radius: 50px;
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 5px 5px 3px 0px $colorPrimario;
+        }
+
+        @each $imagen, $path in $tarjetasFormarParte{
+            .formarParte__tarjeta__imagen--#{$imagen}{
+                
+                background-size: cover;
+                background-image: url(../img/#{$imagen}.png);
+                height: 30%;
+                width: 80%;
+                margin: 1rem auto;
+
+            }
+        }
+
+        &__planes{
+            color: $colorPrimario;
+            background-color: #fff;
+            letter-spacing: 1px;
+            font-family: $letraSecundaria;
+            width: 50%;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 50px;
+            padding: 8px;   
+            align-items: center;
+        }
+
+        &__beneficios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #fff;
+            color: $colorPrimario;
+            font-family: $letraSecundaria;
+            height: 30%;
+            width: 95%;
+            margin: 8px;
+            border-radius: 25px;
+            font-weight: 400;
+            border: 2px double $colorPrimario;
+            font-size: 0.9rem;
+            
+
+        }
+
+        &__boton{
+            padding: 8px 16px;
+            font-family: $letraSecundaria;
+            color: $colorSecundario;
+            background-color: #2381fcb4;
+            border-radius: 50px;
+            border: none;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover{
+                background-color: #2381fc;
+            }
+
+            &--libreria{
+                background-color: $colorPrimario;
+
+                &:hover{
+                    background-color: $colorSecundario;
+                    color: $colorTerciario;
+                }
+            }
+        }
+    }
+}

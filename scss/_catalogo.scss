@@ -1,0 +1,55 @@
+.catalogo {
+    margin: auto;
+    width: 95%;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 1fr 3fr;
+    justify-content: stretch;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "catalogo__titulo"
+      "catalogo__texto"
+      "catalogo__tabla";
+   
+
+    &__titulo {
+        @extend .index__titulo;
+        grid-area: catalogo__titulo;
+        margin: 2rem;
+    }
+
+    &__texto {
+        @include fuenteParrafo(1rem);
+        grid-area: catalogo__texto;
+    }
+
+    &__tabla {
+        grid-area: catalogo__tabla ;
+        border-collapse: collapse;
+        border: 2px solid $colorTerciario;
+        width: 80%;
+        height: auto;
+        margin:0 auto;
+        
+        &__header {
+            color: $colorTerciario;
+            font-size: 1.1rem;
+            font-family: $letraPrimaria;
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid $colorTerciario;
+            
+        }
+
+        &__celda {
+            @extend .catalogo__tabla__header;
+            font-size: 1rem;
+            padding: 0;
+            
+        }
+    }
+}

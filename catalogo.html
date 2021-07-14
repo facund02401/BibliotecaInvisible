@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Libros, prestamo, intercambio de libros, librerias">
+        <meta name="description" content="Este es el catálogo de libros de Biblioteca Invisible, una red para el prestamo e intercambio de libros entre lectores, que apunta a generar nuevos vinculos sociales a traves de la lectura">
+        <title>Catálogo de Biblioteca Invisible</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/estiloscss.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap"
+            rel="stylesheet" />
+    </head>
+
+<body>
+    <header>
+        <nav class="nav navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="nav__titulo navbar-brand" href="index.html">Biblioteca Invisible</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="nav__menu collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link active" href="catalogo.html" class="nav-link">Catálogo</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="como-funciona.html">¿Cómo funciona?</a>
+                        </li>
+                        <li class="nav__item nav-item">
+
+                            <a class="nav__item__link nav-link" href="formar-parte.html">Formar Parte</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="ingresar.html"> Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="catalogo container">
+
+        <h2 class="catalogo__titulo">Catálogo de Biblioteca Invisible</h2>
+        <p class="catalogo__texto">
+            En este catálogo vas a poder encontrar los libros que están ingresados en
+            Biblioteca Invisible. Cada usuario de esta biblioteca señala libros que esté
+            dispuesto a prestar, agregandose a éste listado automáticamente en tiempo real.
+            De esta manera, la lista varía constantemente, trayendo novedad a nuestra biblioteca. <br>
+            Si hoy no encontraste lo que buscabas, volvé próximamente, el libro te puede estar esperando.
+        </p>
+
+        <table class="catalogo__tabla">
+            <thead>
+                <tr>
+                    <th class="catalogo__tabla__header">Título</th>
+                    <th class="catalogo__tabla__header">Autor</th>
+                    <th class="catalogo__tabla__header">Género</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="catalogo__tabla__celda">Julio Cortazar: El cronopio fugitivo</td>
+                    <td class="catalogo__tabla__celda">Miguel Dalmau</td>
+                    <td class="catalogo__tabla__celda">Biografía</td>
+                </tr>
+                <tr>
+                    <td class="catalogo__tabla__celda">De animales a Dioses</td>
+                    <td class="catalogo__tabla__celda">Yuval Noah Harari</td>
+                    <td class="catalogo__tabla__celda">Ensayo</td>
+                </tr>
+                <tr>
+                    <td class="catalogo__tabla__celda">Caza de conejos</td>
+                    <td class="catalogo__tabla__celda">Mario Levrero</td>
+                    <td class="catalogo__tabla__celda">Narrativa</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer class="footer">
+        <div>
+            <ul class="footer__menu mb-0">
+                <li class="footer__item"><a class="footer__item" href="catalogo.html">Catálogo</a></li>
+                <li class="footer__item"><a class="footer__item" href="como-funciona.html"> ¿Cómo funciona?</a></li>
+                <li class="footer__item"><a class="footer__item" href="formar-parte.html"> Formar parte</a></li>
+                <li class="footer__item"><a class="footer__item" href="ingresar.html"> Ingresar</a></li>
+                <li class="footer__item"><a class="footer__item" href="contacto.html"> Contacto</a></li>
+            </ul>
+        </div>
+        <a class="footer__ig" href="/instagram_logo"><img src="./img/instagram.png" alt="instagram logo"
+                class="footer__ig" /></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+@mixin fuenteParrafo($size){
+    font-size: $size;
+    text-align: justify;
+    font-family: $letraPrimaria;
+    line-height: 1.8;
+    color: $colorTerciario;
+    margin: 0 16px 0 0;
+
+}
+
+@mixin titulos {
+    color: $colorPrimario;
+    font-size: 3.5rem;
+    font-family: $letraSecundaria;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 0px 1px $colorTerciario;
+    margin: 2rem;
+    
+}

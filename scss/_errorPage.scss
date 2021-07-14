@@ -1,0 +1,112 @@
+body {
+    background-color: $colorPrimario ;
+    min-height: 100vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+.nav{
+    background-color: $colorPrimario;
+    width: 100%;
+    min-height: 75px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $colorSecundario;
+
+
+    &__titulo{
+        text-decoration: none;
+    color: $colorSecundario;
+    font-size: 2rem;
+    transition: transform 0.2s ease-in-out;
+    font-family: $letraSecundaria;
+    margin: 8px;
+
+        &:hover{
+        transform: scale(1.05);
+        color: $colorSecundario;
+        }
+    }
+
+    &__menu {
+        display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    }
+
+    &__item {
+        font-family: $letraSecundaria;
+        align-items: center;
+        margin: 16px;
+        
+        &__link {
+        text-decoration: none;
+        color: $colorSecundario;
+        padding: 9px;
+        transition: all 0.2s ease-in-out;
+        border: 0px;
+        border-radius: 10px;
+        display: inline-block;
+        }
+
+       &:hover a{
+            color: $colorPrimario !important;
+            background-color: $colorSecundario;
+            font-weight: bold;
+            border: 0px ;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px 0px $colorTerciario;
+            transform: translateY(-5px); }
+        } 
+}
+
+.footer {
+    background-color: $colorPrimario;
+    font-family: $letraSecundaria;
+    height: 75px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1rem;
+    border-top: $colorSecundario;
+    align-items: center;
+    margin-top: 80px;
+
+    &__menu{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        
+        @media screen and (max-width:420px){
+            
+            font-size: 10px;    
+        }
+    }
+
+    &__item {
+        padding: 8px;
+        color: $colorSecundario;
+        text-decoration: none;
+        align-items: center;
+
+        @media screen and (max-width:400px) {
+            padding: 2px;
+        }
+        
+
+        &:hover{
+            text-decoration: underline;
+            color: $colorSecundario;
+        }
+    }
+
+    &__ig {
+        max-height: 16px;
+        max-width: 16px;
+        margin-bottom: 8px;
+    }
+}

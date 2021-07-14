@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Libros, prestamo, intercambio de libros, librerias, pricing, precio">
+    <meta name="description" content="Forma parte de Biblioteca Invisible. Planes, pricing y como crear cuenta">
+    <title>Formá parte de Biblioteca Invisible</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estiloscss.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="nav__titulo navbar-brand" href="index.html">Biblioteca Invisible</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="nav__menu collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="catalogo.html" class="nav-link">Catálogo</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="como-funciona.html">¿Cómo funciona?</a>
+                        </li>
+                        <li class="nav__item nav-item">
+
+                            <a class="nav__item__link nav-link active" href="formar-parte.html">Formar Parte</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="ingresar.html"> Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="formarParte">
+        <h2 class="formarParte__titulo">Formar parte</h2>
+        <div class="container">
+            <p class="formarParte__texto">
+                Llegó el momento de <b>formar parte de Biblioteca Invisible</b>. Aquí podrás elegir el plan que más se
+                ajuste a tus necesidades y tu capacidad de pago. Empezá a disfrutar ya mismo de los beneficios de formar
+                parte de una comunidad de lectores, que buscan intercambiar, relacionarse, recomendar y conocerse. <br>
+                Si sos un lector asiduo, un deborador de libros, un ratón de biblioteca, no te quedes atrás, vení y traé
+                a tus amigos, asociate, conocé a quienes apuestan por este proyecto. <br>
+                Lectores y librerías te esperan para poder seguir disfrutando.
+            </p>
+        </div>
+        <br>
+        <!-- COMIENZA TARJETAS -->
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="formarParte__tarjeta col-lg-3">
+                    <div class="formarParte__tarjeta__imagen formarParte__tarjeta__imagen--lectorFamiliar">
+                    </div>
+                    <span class="formarParte__tarjeta__planes">Lector<br>familiar</span>
+                    <ul class="formarParte__tarjeta__beneficios">
+                        <li>Biblioteca virtual ilimitada.</li>
+                        <li>Descuentos en librerías asociadas.</li>
+                        <li>Novedades de regalo cada 6 meses.</li>
+                    </ul>
+                    <form action="crear-cuenta.html">
+                        <button class="formarParte__tarjeta__boton" type="submit">
+                            Registrate por US$ 3/mes
+                        </button>
+                    </form>
+                </div>
+                <div class="formarParte__tarjeta col-lg-3">
+                    <div class="formarParte__tarjeta__imagen formarParte__tarjeta__imagen--lectorIndividual">
+                    </div>
+                    <span class="formarParte__tarjeta__planes">Lector<br>individual</span>
+                    <ul class="formarParte__tarjeta__beneficios">
+                        <li>Biblioteca virtual con capacidad para 50 libros.</li>
+                        <li>Empezá <b><em>ya</em></b> a recibir recomendaciones de lectura.</li>
+                    </ul>
+                    <form action="crear-cuenta.html">
+                        <button class="formarParte__tarjeta__boton" type="submit">
+                            ¡Registrate gratis!
+                        </button>
+                    </form>
+                </div>
+                <div class="formarParte__tarjeta col-lg-3">
+                    <div class="formarParte__tarjeta__imagen formarParte__tarjeta__imagen--tiendaFormarParte">
+                    </div>
+                    <span class="formarParte__tarjeta__planes">Librería<br>asociada</span>
+                    <ul class="formarParte__tarjeta__beneficios">
+                        <li>Sumate a una red especializada en libros.</li>
+                        <li>Generá un vínvulo estrecho con lectores a través de recomendaciones especializadas y
+                            descuentos.</li>
+                    </ul>
+                    <form action="contacto.html">
+                        <button class="formarParte__tarjeta__boton formarParte__tarjeta__boton--libreria" type="submit">
+                            Escribinos para mas información
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- TERMINA TARJETAS -->
+        <br>
+        <div class="container">
+            <p class="formarParte__texto">
+                ¿Querés sumarte? <a class="formarParte__texto__link" href="crear-cuenta.html">Creá tu cuenta</a>,
+                seleccioná el plan que más se ajuste a tus necesidades. Lo siguiente es
+                hacer el registro virtual de tu biblioteca y empezar a compartir con
+                otros lectores de la Biblioteca Invisible.<br> <br>
+                ¿Te quedaste con dudas? Escribinos en nuestra sección de
+                <a class="formarParte__texto__link" href="contacto.html">contacto</a>.
+            </p>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div>
+            <ul class="footer__menu mb-0">
+                <li class="footer__item"><a class="footer__item" href="catalogo.html">Catálogo</a></li>
+                <li class="footer__item"><a class="footer__item" href="como-funciona.html"> ¿Cómo funciona?</a></li>
+                <li class="footer__item"><a class="footer__item" href="formar-parte.html"> Formar parte</a></li>
+                <li class="footer__item"><a class="footer__item" href="ingresar.html"> Ingresar</a></li>
+                <li class="footer__item"><a class="footer__item" href="contacto.html"> Contacto</a></li>
+            </ul>
+        </div>
+        <a class="footer__ig" href="/instagram_logo"><img src="./img/instagram.png" alt="instagram logo"
+                class="footer__ig" /></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

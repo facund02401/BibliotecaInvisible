@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Libros, prestamo, intercambio de libros, librerias, crear cuenta">
+    <meta name="description" content="Crea tu cuenta en Biblioteca Invisible. Tenemos diferentes planes que se ajustan a tus necesidades">
+    <title>Crear cuenta en Biblioteca Invisible</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estiloscss.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="nav__titulo navbar-brand" href="index.html">Biblioteca Invisible</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="nav__menu collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="catalogo.html" class="nav-link">Catálogo</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="como-funciona.html">¿Cómo funciona?</a>
+                        </li>
+                        <li class="nav__item nav-item">
+
+                            <a class="nav__item__link nav-link" href="formar-parte.html">Formar Parte</a>
+                        </li>
+                        <li class="nav__item nav-item">
+                            <a class="nav__item__link nav-link" href="ingresar.html"> Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="crearCuenta">
+        <h2 class="crearCuenta__titulo">Creá tu cuenta</h2>
+        <div class="container">
+            <!-- COMIENZO FORM CREAR CUENTA -->
+            <form class="contacto__form">
+                <div class=" row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre">Tu nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-grup col-md-6">
+                        <label for="nombreUsuario">Nombre de usuario:</label>
+                        <input type="text" class="form-control" id="nombreUsuarui" placeholder="alguien_11">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" placeholder="***************">
+                    </div>
+                    <div class="form-group col">
+                        <label for="repetir-password" class="form-label">Repetir contraseña:</label>
+                        <input type="password" class="form-control" id="repetir-password" placeholder="***************">
+                    </div>
+                </div>
+                <div class="form-group col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="alguien@algo.alg">
+                </div>
+                <div class="row">
+                    <div class="form-group col my-3">
+                        <label for="motivo">Seleccioná tu motivo de consulta:</label>
+                        <select id="motivo" class=" form-control">
+                            <option selected>-- Formar parte como... --</option>
+                            <option>Lector individual (Plan limitado / Gratis)</option>
+                            <option>Familia Lectora (US$3 / mes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="suscripcionCheck">
+                            <label class="form-check-label" for="suscripcionCheck">
+                                Quiero suscribirme al newsletter de Biblioteca Invisible para recibir novedades y
+                                ofertas de librerías asociadas.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terminosCondiciones">
+                            <label class="form-check-label" for="terminosCondiciones">
+                                Acepto los términos, condiciones y la política de privacidad de Biblioteca Invisible
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn mt-3 contacto__form__boton">Crear cuenta</button>
+            </form>
+
+        </div>
+        <!-- FIN FORM CREAR CUENTA -->
+
+
+        <!-- COMIENZA FORM CREAR-CUENTA -->
+        <!-- <form action="" class="form">
+                <label for="nuevo-usuario">Nombre de usuario:</label>
+                <input type="text" name="nuevo-usuario" id="nuevo-usuario" />
+                <br />
+                <label for="nu-password">Contraseña: </label>
+                <input type="password" name="nu-password" id="nu-password" />
+                <br />
+                <label for="repetir-password">Repetir contraseña: </label>
+                <input type="password" name="repetir-password" id="repetir-password" />
+                <br />
+                <div>
+                    <label for="tipo">Elegí el plan que más se adecue a vos: </label>
+                    <select name="tipo" id="tipo">
+                        <option value="">-- Formar parte como... --</option>
+                        <option value="lector">Lector individual (US$1.50 / mes)</option>
+                        <option value="familia">Familia Lectora (US$3 / mes</option>
+                    </select>
+                </div>
+                <br />
+                <div>
+                    <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" />
+                    <label for="terminos-condiciones">Acepto los términos y condiciones de Biblioteca Invisible.</label>
+                </div>
+                <br />
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter" />
+                    <label for="newsletter">Quiero recibir las novedades de Biblioteca Invisible y las ofertas de
+                        sus librerías asociadas.</label>
+                </div>
+                <br />
+                <button>Crear una cuenta</button>
+            </form>
+            FINALIZA FORM CREAR-CUENTA -->
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <ul class="footer__menu mb-0">
+                <li class="footer__item"><a class="footer__item" href="catalogo.html">Catálogo</a></li>
+                <li class="footer__item"><a class="footer__item" href="como-funciona.html"> ¿Cómo funciona?</a></li>
+                <li class="footer__item"><a class="footer__item" href="formar-parte.html"> Formar parte</a></li>
+                <li class="footer__item"><a class="footer__item" href="ingresar.html"> Ingresar</a></li>
+                <li class="footer__item"><a class="footer__item" href="contacto.html"> Contacto</a></li>
+            </ul>
+        </div>
+        <a class="footer__ig" href="/instagram_logo"><img src="./img/instagram.png" alt="instagram logo"
+                class="footer__ig" /></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

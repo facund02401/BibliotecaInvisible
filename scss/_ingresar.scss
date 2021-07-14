@@ -1,0 +1,41 @@
+.ingresar{
+
+    width: 85%;
+    min-height: 100vh;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 95%;
+    }
+
+    &__titulo{
+        @include titulos();
+
+    }
+
+    &__form {
+        max-width: 50%;
+        min-width: 330px;
+        margin: auto;
+        border: 1rem solid $colorPrimario;
+        border-radius: 50px;
+        padding: 80px;
+        font-family: $letraPrimaria;
+        @media screen and (max-width: 768px) {
+            padding: 8px;
+            border: none
+            
+        }
+
+        &__boton{
+            background-color: $colorPrimario;
+            color: $colorSecundario;
+            transition: all 0.2s ease-in-out;
+            font-family: $letraSecundaria;
+
+            &:hover{
+                color: $colorSecundario;
+                background-color: $colorTerciario;
+            }
+        }
+    }
+}

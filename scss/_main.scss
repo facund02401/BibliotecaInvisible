@@ -1,0 +1,109 @@
+.index {
+
+    margin: auto;
+    width: 95%;
+    min-height: 100vh;
+
+
+    &__titulo{
+        //grid-area: index__titulo; 
+        color: $colorPrimario;
+        font-size: 4rem;
+        font-family: $letraSecundaria;
+        text-align: center;
+        letter-spacing: 1px;
+        text-shadow: 2px 0px 1px $colorTerciario;
+
+
+    }
+
+    &__texto{
+        //grid-area: index__texto;
+        align-self: flex-end;
+        margin-bottom: 3%;
+        margin-left: 16px;
+        @include fuenteParrafo(1.2rem)
+
+    }
+
+    &__busqueda{
+        //grid-area: index__busqueda; 
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: flex-start;
+        justify-self: start;
+
+        & label{
+            color:$colorPrimario;
+            font-size: 1.5rem;
+            font-family: $letraSecundaria;
+            font-weight: bold;
+        }
+
+        & input {
+        height: 1.5rem;
+        position: relative;
+        bottom: 3px;
+        width: 230px;
+        margin-left: 5px;
+        }
+    }
+
+    &__imagen{
+        //grid-area: index__imagen;
+        max-width: 90%;
+        align-self: end;
+        border-bottom: 2px solid $colorTerciario;
+        margin-bottom: -16px;
+    }
+
+    &__boton {
+        background-color: $colorPrimario;
+        text-align: center;
+        padding: 16px 24px;
+        transition: all 0.2s ease-in-out;
+        border: 0px;
+        border-radius: 10px;
+        display: inline-block;
+        //grid-area: index__boton;
+        font-size: 1.2rem;
+        font-family: $letraSecundaria;
+        text-decoration: none;
+        color: $colorSecundario;
+
+        &:hover {
+            border: 0px ;
+            border-radius: 10px;
+            box-shadow: 1px 5px 3px 0px $colorTerciario;
+            transform: translateY(-5px);
+            cursor: pointer;
+           }
+        
+    }
+
+}
+
+
+.novedades {
+    margin-top: 10%;
+    margin: auto;
+    width: 95%;
+    min-height: 100vh;
+
+    &__titulo {
+        @extend .index__titulo;
+        font-size: 4rem;
+    }
+
+    &__carousel {
+        background-color: $colorPrimario;
+        width: 600px;
+        height: 550px;
+    }
+
+    &__libro {
+        margin: auto;
+    }
+    
+}
