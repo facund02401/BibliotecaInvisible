@@ -36,7 +36,8 @@
         margin:0 auto;
         
         &__header {
-            color: $colorTerciario;
+            color: $colorSecundario;
+            background-color: $colorPrimario;
             font-size: 1.1rem;
             font-family: $letraPrimaria;
             text-align: center;

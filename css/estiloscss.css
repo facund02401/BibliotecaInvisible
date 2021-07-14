@@ -106,7 +106,8 @@
     height: auto;
     margin: 0 auto; }
     .catalogo__tabla__header, .catalogo__tabla__celda {
-      color: #170e4e;
+      color: #f8f3f0;
+      background-color: #433692;
       font-size: 1.1rem;
       font-family: "Raleway", sans-serif;
       text-align: center;
