@@ -125,7 +125,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
   justify-content: stretch;
   align-content: stretch;
   justify-items: stretch;
@@ -147,7 +147,11 @@
     font-family: "Raleway", sans-serif;
     line-height: 1.8;
     color: #170e4e;
-    margin: 0 16px 0 0; }
+    margin: 0 16px 0 0;
+    margin-top: 50px; }
+    @media screen and (max-width: 420px) {
+      .comoFunciona__texto {
+        margin-top: 100px; } }
   .comoFunciona__imagen {
     justify-self: center;
     grid-area: comoFunciona__imagen;
