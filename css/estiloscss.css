@@ -73,6 +73,8 @@
     background-color: #433692;
     width: 600px;
     height: 550px; }
+    .novedades__carousel__texto {
+      color: #433692; }
   .novedades__libro {
     margin: auto; }
 

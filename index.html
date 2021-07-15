@@ -99,66 +99,55 @@
 
     </section>
     <!-- comienzo Carousel -->
-    <section class="novedades mb-5">
-        <div class="row">
-            <div class="novedades__titulo col-lg-4 mt-5 ml-3 d-flex align-items-center justify-content-end">
-                <h2 class="novedades__titulo titulo mt-5">¿Qué novedades hay en Biblioteca Invisible?</h2>
-            </div>
-            <div class="novedades__carousel col-md-8 navColor mt-5 py-3 rounded mx-auto d-flex align-items-center">
-                <div id="carouselIndex" class="carousel slide mx-auto" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="novedades__libro carousel-inner ">
-                        <div class="carousel-item active">
-                            <div class="novedades__carta card my-auto mx-auto" style="width: 18rem;">
-                                <img src="./img/libro1.jpg" class="novedades__imagen card-img-top "
-                                    alt="Caza de Conejos de Mario Levrero">
-                                <div class="card-body h-100 w-100">
-                                    <p class="novedades__texto card-text"> <i> Caza de Conejos</i> de Mario Levrero</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="novedades__libro carousel-item">
-                            <div class="novedades__carta card my-auto mx-auto" style="width: 18rem;">
-                                <img src="./img/libro2.jpg" class="novedades__imagen card-img-top d-block w-100"
-                                    alt="Julio Cortázar de Miguel Dalmau">
-                                <div class="card-body h-100 w-100">
-                                    <p class="novedades__texto card-text"> <i> Júlio Cortázar</i> de Miguel Dalmau</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="novedades__libro carousel-item">
-                            <div class="novedades__carta card my-auto mx-auto" style="width: 18rem;">
-                                <img src="./img/libro3.jpg" class="novedades__imagen card-img-top d-block w-100"
-                                    alt="De animales a Dioses de Noha Harari">
-                                <div class="card-body h-100 w-100">
-                                    <p class="novedades__texto card-text"> <i> De animales a dioses</i> de Yuval Noha
-                                        Harari</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+    <!-- comienzo Carousel -->
+  <section class="novedades mb-5">
+    <div class="row">
+        <div class="novedades__titulo col-lg-4 mt-5 ml-3 d-flex align-items-center justify-content-end">
+            <h2 class="novedades__titulo titulo mt-5">¿Qué novedades hay en Biblioteca Invisible?</h2>
         </div>
+  <div class="novedades__carousel col-md-8 navColor mt-5 py-3 rounded mx-auto d-flex align-items-center">
+    <div id="carouselIndexFade" class="carousel slide carousel-fade  mx-auto" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselIndexTexto" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselIndexTexto" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselIndexTexto" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  data-bs-interval="3000">
+          <img src="./img/libro1.jpg" class="d-block mx-auto" >
+          <div class="carousel-caption novedades__carousel__texto d-none d-md-block">
+            <h5>Caza de conejos</h5>
+            <p>de Mario Levrero</p>
+          </div>
         </div>
-    </section>
+        <div class="carousel-item"  data-bs-interval="3000">
+          <img src="./img/libro2.jpg" class="d-block mx-auto" >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Julio Cortázar: el cronopio fugitivo</h5>
+            <p>de Miguel Dalmau</p>
+          </div>
+        </div>
+        <div class="carousel-item"  data-bs-interval="3000">
+          <img src="./img/libro3.jpg" class="d-block mx-auto" >
+          <div class="carousel-caption d-none d-md-block">
+            <h5>De animales a Dioses</h5>
+            <p>de Yuval Noah Harari</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndexFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIndexFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+    </div>
+</section>
+<!-- fin Carousel -->
     <!-- fin Carousel -->
     <footer class="footer">
         <div>
